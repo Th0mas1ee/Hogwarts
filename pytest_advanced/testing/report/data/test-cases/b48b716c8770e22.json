@@ -1,0 +1,155 @@
+{
+  "uid" : "b48b716c8770e22",
+  "name" : "test_sub[sub_failed]",
+  "fullName" : "test_calc.TestCalc#test_sub",
+  "historyId" : "02c7599de5d6356bd9a4f134d947abab",
+  "time" : {
+    "start" : 1612429430913,
+    "stop" : 1612429430913,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert -0.1 == 0.3",
+  "statusTrace" : "self = <pytest_advanced.testing.test_calc.TestCalc object at 0x000001F88A9C9BE0>, get_calc = <pytest_advanced.calc.calc.Calculator object at 0x000001F88A997D30>\nsub_get_data = [0.1, 0.2, 0.3]\n\n    @allure.story(\"Subtraction Testing\")\n    @pytest.mark.sub\n    @allure.severity(allure.severity_level.NORMAL)\n    @pytest.mark.run(order=2)\n    def test_sub(self, get_calc, sub_get_data):\n        # 调用相减方法\n        with allure.step(\"Computing the difference of two numbers\"):\n            result = get_calc.sub(sub_get_data[0], sub_get_data[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到相减结果之后写断言\n>       assert result == sub_get_data[2]\nE       assert -0.1 == 0.3\n\ntest_calc.py:61: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sub_get_data",
+    "time" : {
+      "start" : 1612429430912,
+      "stop" : 1612429430912,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612429430844,
+      "stop" : 1612429430844,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert -0.1 == 0.3",
+    "statusTrace" : "self = <pytest_advanced.testing.test_calc.TestCalc object at 0x000001F88A9C9BE0>, get_calc = <pytest_advanced.calc.calc.Calculator object at 0x000001F88A997D30>\nsub_get_data = [0.1, 0.2, 0.3]\n\n    @allure.story(\"Subtraction Testing\")\n    @pytest.mark.sub\n    @allure.severity(allure.severity_level.NORMAL)\n    @pytest.mark.run(order=2)\n    def test_sub(self, get_calc, sub_get_data):\n        # 调用相减方法\n        with allure.step(\"Computing the difference of two numbers\"):\n            result = get_calc.sub(sub_get_data[0], sub_get_data[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到相减结果之后写断言\n>       assert result == sub_get_data[2]\nE       assert -0.1 == 0.3\n\ntest_calc.py:61: AssertionError",
+    "steps" : [ {
+      "name" : "Computing the difference of two numbers",
+      "time" : {
+        "start" : 1612429430913,
+        "stop" : 1612429430913,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "231bd253fbb7fdfa",
+      "name" : "stdout",
+      "source" : "231bd253fbb7fdfa.txt",
+      "type" : "text/plain",
+      "size" : 26
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "sub_get_data::0",
+    "time" : {
+      "start" : 1612429430915,
+      "stop" : 1612429430915,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Subtraction Testing"
+  }, {
+    "name" : "feature",
+    "value" : "Calculator Testing"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "sub"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-D94MS34"
+  }, {
+    "name" : "thread",
+    "value" : "20284-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sub_get_data",
+    "value" : "[0.1, 0.2, 0.3]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=2)", "sub" ]
+  },
+  "source" : "b48b716c8770e22.json",
+  "parameterValues" : [ "[0.1, 0.2, 0.3]" ]
+}

@@ -1,0 +1,182 @@
+{
+  "uid" : "eb88cc3309cdcc3b",
+  "name" : "test_div[div_failed]",
+  "fullName" : "test_calc.TestCalc#test_div",
+  "historyId" : "958f87b188ecd98436bffd3f59fa1ae0",
+  "time" : {
+    "start" : 1612429434966,
+    "stop" : 1612429434966,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert -0.5 == 0.3",
+  "statusTrace" : "self = <pytest_advanced.testing.test_calc.TestCalc object at 0x000001F88AA27400>, get_calc = <pytest_advanced.calc.calc.Calculator object at 0x000001F88A997D30>\ndiv_get_data = [0.1, -0.2, 0.3]\n\n    @allure.story(\"Division Testing\")\n    @pytest.mark.div\n    @allure.severity(allure.severity_level.NORMAL)\n    @pytest.mark.run(order=4)\n    @pytest.mark.flaky(reruns=2, reruns_delay=1)\n    def test_div(self, get_calc, div_get_data):\n        # 调用相除方法\n        with allure.step(\"Computing the division of two numbers\"):\n            divisor = div_get_data[1]\n            if divisor == 0:\n                raise Exception(\"The divisor couldn't be zero!\")\n            else:\n                result = get_calc.div(div_get_data[0], div_get_data[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到相除结果之后写断言\n        allure.attach(\"<div>This is a html attachment</div>\", 'Html attachment',\n                      attachment_type=allure.attachment_type.HTML)\n>       assert result == div_get_data[2]\nE       assert -0.5 == 0.3\n\ntest_calc.py:48: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "div_get_data",
+    "time" : {
+      "start" : 1612429434965,
+      "stop" : 1612429434965,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612429430844,
+      "stop" : 1612429430844,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert -0.5 == 0.3",
+    "statusTrace" : "self = <pytest_advanced.testing.test_calc.TestCalc object at 0x000001F88AA27400>, get_calc = <pytest_advanced.calc.calc.Calculator object at 0x000001F88A997D30>\ndiv_get_data = [0.1, -0.2, 0.3]\n\n    @allure.story(\"Division Testing\")\n    @pytest.mark.div\n    @allure.severity(allure.severity_level.NORMAL)\n    @pytest.mark.run(order=4)\n    @pytest.mark.flaky(reruns=2, reruns_delay=1)\n    def test_div(self, get_calc, div_get_data):\n        # 调用相除方法\n        with allure.step(\"Computing the division of two numbers\"):\n            divisor = div_get_data[1]\n            if divisor == 0:\n                raise Exception(\"The divisor couldn't be zero!\")\n            else:\n                result = get_calc.div(div_get_data[0], div_get_data[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到相除结果之后写断言\n        allure.attach(\"<div>This is a html attachment</div>\", 'Html attachment',\n                      attachment_type=allure.attachment_type.HTML)\n>       assert result == div_get_data[2]\nE       assert -0.5 == 0.3\n\ntest_calc.py:48: AssertionError",
+    "steps" : [ {
+      "name" : "Computing the division of two numbers",
+      "time" : {
+        "start" : 1612429434966,
+        "stop" : 1612429434966,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e77a523c6281b34",
+      "name" : "Html attachment",
+      "source" : "e77a523c6281b34.html",
+      "type" : "text/html",
+      "size" : 36
+    }, {
+      "uid" : "11b7e5e609e1196c",
+      "name" : "stdout",
+      "source" : "11b7e5e609e1196c.txt",
+      "type" : "text/plain",
+      "size" : 78
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "div_get_data::0",
+    "time" : {
+      "start" : 1612429434968,
+      "stop" : 1612429434968,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Division Testing"
+  }, {
+    "name" : "feature",
+    "value" : "Calculator Testing"
+  }, {
+    "name" : "tag",
+    "value" : "div"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=2, reruns_delay=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-D94MS34"
+  }, {
+    "name" : "thread",
+    "value" : "20284-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "div_get_data",
+    "value" : "[0.1, -0.2, 0.3]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9e77386c948aa855",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert -0.5 == 0.3",
+      "time" : {
+        "start" : 1612429433961,
+        "stop" : 1612429433961,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6c38669c55374d94",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert -0.5 == 0.3",
+      "time" : {
+        "start" : 1612429432956,
+        "stop" : 1612429432956,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "div", "run(order=4)", "flaky(reruns=2, reruns_delay=1)" ]
+  },
+  "source" : "eb88cc3309cdcc3b.json",
+  "parameterValues" : [ "[0.1, -0.2, 0.3]" ]
+}

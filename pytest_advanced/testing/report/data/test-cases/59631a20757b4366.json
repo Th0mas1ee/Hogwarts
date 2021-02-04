@@ -1,0 +1,155 @@
+{
+  "uid" : "59631a20757b4366",
+  "name" : "test_mul[mul_failed]",
+  "fullName" : "test_calc.TestCalc#test_mul",
+  "historyId" : "62bc23d18724f4bab9d33351facb2984",
+  "time" : {
+    "start" : 1612429430926,
+    "stop" : 1612429430926,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert -0.02 == 0.3",
+  "statusTrace" : "self = <pytest_advanced.testing.test_calc.TestCalc object at 0x000001F88A9C9070>, get_calc = <pytest_advanced.calc.calc.Calculator object at 0x000001F88A997D30>\nmul_get_data = [0.1, -0.2, 0.3]\n\n    @allure.story(\"Multiplication Testing\")\n    @pytest.mark.mul\n    @allure.severity(allure.severity_level.NORMAL)\n    @pytest.mark.run(order=3)\n    def test_mul(self, get_calc, mul_get_data):\n        # 调用相乘方法\n        with allure.step(\"Computing the product of two numbers\"):\n            result = get_calc.mul(mul_get_data[0], mul_get_data[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到相乘结果之后写断言\n>       assert result == mul_get_data[2]\nE       assert -0.02 == 0.3\n\ntest_calc.py:74: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "mul_get_data",
+    "time" : {
+      "start" : 1612429430926,
+      "stop" : 1612429430926,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612429430844,
+      "stop" : 1612429430844,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert -0.02 == 0.3",
+    "statusTrace" : "self = <pytest_advanced.testing.test_calc.TestCalc object at 0x000001F88A9C9070>, get_calc = <pytest_advanced.calc.calc.Calculator object at 0x000001F88A997D30>\nmul_get_data = [0.1, -0.2, 0.3]\n\n    @allure.story(\"Multiplication Testing\")\n    @pytest.mark.mul\n    @allure.severity(allure.severity_level.NORMAL)\n    @pytest.mark.run(order=3)\n    def test_mul(self, get_calc, mul_get_data):\n        # 调用相乘方法\n        with allure.step(\"Computing the product of two numbers\"):\n            result = get_calc.mul(mul_get_data[0], mul_get_data[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到相乘结果之后写断言\n>       assert result == mul_get_data[2]\nE       assert -0.02 == 0.3\n\ntest_calc.py:74: AssertionError",
+    "steps" : [ {
+      "name" : "Computing the product of two numbers",
+      "time" : {
+        "start" : 1612429430926,
+        "stop" : 1612429430926,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "ff26cc4728a9c2d1",
+      "name" : "stdout",
+      "source" : "ff26cc4728a9c2d1.txt",
+      "type" : "text/plain",
+      "size" : 26
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "mul_get_data::0",
+    "time" : {
+      "start" : 1612429430929,
+      "stop" : 1612429430929,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Multiplication Testing"
+  }, {
+    "name" : "feature",
+    "value" : "Calculator Testing"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "tag",
+    "value" : "mul"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-D94MS34"
+  }, {
+    "name" : "thread",
+    "value" : "20284-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "mul_get_data",
+    "value" : "[0.1, -0.2, 0.3]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=3)", "mul" ]
+  },
+  "source" : "59631a20757b4366.json",
+  "parameterValues" : [ "[0.1, -0.2, 0.3]" ]
+}
