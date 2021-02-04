@@ -1,0 +1,41 @@
+add:
+  add_case_data:
+    - [1, 1, 2]
+    - [100, 100, 200]
+    - [0.1, 0.2, 0.3]
+    - [0.1, -0.2, 0.3]
+    - [-1, -1, -2]
+  add_case_id:
+    ['add_int', 'add_bigint', 'add_float', 'add_failed', 'add_minus']
+
+sub:
+  sub_case_data:
+    - [2, 1, 1]
+    - [200, 100, 100]
+    - [0.3, 0.2, 0.1]
+    - [0.1, 0.2, 0.3]
+    - [-1, -2, 1]
+  sub_case_id:
+    ['sub_int', 'sub_bigint', 'sub_float', 'sub_failed', 'sub_minus']
+
+mul:
+  mul_case_data:
+    - [1, 2, 2]
+    - [100, 100, 10000]
+    - [0.1 ,0.2, 0.02]
+    - [0.1, -0.2, 0.3]
+    - [-1, -1, 1]
+  mul_case_id:
+    ['mul_int', 'mul_bigint', 'mul_float', 'mul_failed', 'mul_minus']
+
+div:
+  div_case_data:
+    - [2, 1, 2]
+    - [200, 100, 200]
+    - [0.1, 0.2, 0.5]
+    - [0.1, -0.2, 0.3]
+    - [-1, -1, 1]
+    - [0, 1, 0]
+    - [1, 0, 0]
+  div_case_id:
+    ['div_int', 'div_bigint', 'div_float', 'div_failed', 'div_minus', 'div_zero1', 'div_zero2']
