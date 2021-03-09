@@ -10,3 +10,5 @@ Below is homework description:
 4. pytest_advanced：python pytest测试实战课后作业
 
 5. web_wecom_auto_login：企业微信自动化登录课后作业
+
+6. web_wecom_po：企业微信web端自动化测试实战课后作业
