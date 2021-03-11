@@ -1,0 +1,7 @@
+goto_manual_add_member_page:
+  - action: find_click
+    locator: //*[@resource-id="com.tencent.wework:id/cth"]
+
+goto_contact_page:
+  - action: find_click
+    locator: //*[@resource-id="com.tencent.wework:id/ig0"]

@@ -1,0 +1,9 @@
+add_member_manually:
+  - action: find_input
+    locator: //*[@resource-id="com.tencent.wework:id/b7m"]
+    value: '{name}'
+  - action: find_input
+    locator: //*[@resource-id="com.tencent.wework:id/fwi"]
+    value: '{phone_number}'
+  - action: find_click
+    locator: //*[@resource-id="com.tencent.wework:id/aj_"]

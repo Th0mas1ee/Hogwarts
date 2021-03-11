@@ -1,0 +1,7 @@
+goto_add_member_page:
+  - locator: 添加成员
+    action: swip_click
+
+get_contact_names:
+  - locator: //*[@resource-id='com.tencent.wework:id/inp']/android.widget.TextView
+    action: finds
