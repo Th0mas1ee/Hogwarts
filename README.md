@@ -12,3 +12,5 @@ Below is homework description:
 5. web_wecom_auto_login：企业微信自动化登录课后作业
 
 6. web_wecom_po：企业微信web端自动化测试实战课后作业
+
+7. app_wecom_homework：企业微信移动app实战与答疑课后作业
