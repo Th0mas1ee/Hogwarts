@@ -1,0 +1,12 @@
+search_contact:
+  - locator: //*[@resource-id='com.tencent.wework:id/gy9']
+    action: find_input
+    value: '{contact_name}'
+
+get_matched_contact_num:
+  - locator: //*[@resource-id="com.tencent.wework:id/gzp"]/android.widget.RelativeLayout
+    action: finds
+
+goto_first_contact_page:
+  - locator: //*[@resource-id="com.tencent.wework:id/gzp"]/android.widget.RelativeLayout[2]
+    action: find_click

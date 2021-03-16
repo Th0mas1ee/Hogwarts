@@ -1,0 +1,3 @@
+goto_contact_detail_page:
+  - locator: //*[@resource-id="com.tencent.wework:id/igo"]
+    action: find_click

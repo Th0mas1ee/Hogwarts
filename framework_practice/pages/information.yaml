@@ -1,0 +1,9 @@
+goto_workspace_page:
+  - locator: //*[@text='工作台']
+    action: find_click
+
+goto_contact_page:
+#  - locator: //*[@text='日程']
+#    action: find_click
+  - locator: //*[@text='通讯录']
+    action: find_click

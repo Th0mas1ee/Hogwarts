@@ -1,0 +1,3 @@
+goto_contact_edit_page:
+  - locator: //*[@resource-id="com.tencent.wework:id/bct"]
+    action: find_click
