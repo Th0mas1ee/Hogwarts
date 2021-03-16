@@ -14,3 +14,5 @@ Below is homework description:
 6. web_wecom_po：企业微信web端自动化测试实战课后作业
 
 7. app_wecom_homework：企业微信移动app实战与答疑课后作业
+
+7. framework_practice：打造自己的测试框架实战
