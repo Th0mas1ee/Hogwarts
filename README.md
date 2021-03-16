@@ -15,4 +15,4 @@ Below is homework description:
 
 7. app_wecom_homework：企业微信移动app实战与答疑课后作业
 
-7. framework_practice：打造自己的测试框架实战
+8. framework_practice：打造自己的测试框架实战
