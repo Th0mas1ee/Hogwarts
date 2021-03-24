@@ -1,0 +1,58 @@
+{
+  "data": {
+    "pid": -1,
+    "category": 1,
+    "stocks": [
+      {
+        "symbol": "SH600036",
+        "name": "招商银行",
+        "type": 11,
+        "remark": "",
+        "exchange": "SH",
+        "created": 1610953899764
+      },
+      {
+        "symbol": "SH601166",
+        "name": "兴业银行",
+        "type": 11,
+        "remark": "",
+        "exchange": "SH",
+        "created": 1610953899764
+      },
+      {
+        "symbol": "SH601919",
+        "name": "中远海控",
+        "type": 11,
+        "remark": "",
+        "exchange": "SH",
+        "created": 1610953899764
+      },
+      {
+        "symbol": "SZ000002",
+        "name": "万科A",
+        "type": 11,
+        "remark": "",
+        "exchange": "SZ",
+        "created": 1610953899764
+      },
+      {
+        "symbol": "SZ000100",
+        "name": "TCL科技",
+        "type": 11,
+        "remark": "",
+        "exchange": "SZ",
+        "created": 1610953899764
+      },
+      {
+        "symbol": "SZ002466",
+        "name": "天齐锂业",
+        "type": 11,
+        "remark": "",
+        "exchange": "SZ",
+        "created": 1610953899764
+      }
+    ]
+  },
+  "error_code": 0,
+  "error_description": ""
+}
