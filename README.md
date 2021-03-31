@@ -18,3 +18,5 @@ Below is homework description:
 8. framework_practice：打造自己的测试框架实战
 
 9. mock_practice：雪球app抓包与mock实战
+
+10. api_wecom_homework：企业微信接口测试实战与答疑
